@@ -1,0 +1,59 @@
+:root {
+    --basic-dark:#2A2C2F;
+    --basic-light:#FFFFFF;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.page {
+    background-color: var(--basic-dark);
+    color:var(--basic-light);
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    position: relative;
+    min-width: 1280;
+}
+
+.header {
+    position: absolute;
+    width: 1184px;
+    height: 52px;
+    left: 48px;
+    top: 28px;
+}
+
+.header__logo {
+    position: absolute;
+    width: 176px;
+    height: 52px;
+    left: 48px;
+    top: 28px;
+}
+
+.header__links {
+    list-style: none;
+}
+
+.header__lang-link {
+    position: absolute;
+width: 30px;
+height: 28px;
+left: 1155px;
+top: 46px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height, or 117% */
+
+text-align: right;
+text-decoration-line: underline;
+
+}
