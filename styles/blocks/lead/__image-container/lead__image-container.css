@@ -1,0 +1,27 @@
+.lead__image-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width:766px) {
+    .lead__image-container {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:1023px) {
+    .lead__image-container {
+        margin-right: 48px;
+        margin-left: 48px;
+    }
+}
+
+@media screen and (min-width:1279px) {
+    .lead__image-container {
+        margin-left: 128px;
+        margin-right: 128px;
+    }
+}

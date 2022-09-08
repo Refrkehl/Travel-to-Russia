@@ -1,0 +1,29 @@
+.header__lang-link {
+    color: var(--basic-light);
+    
+    font-style: normal;
+    font-weight: 400;
+
+    text-align: right;
+    margin-right: 18px;
+}
+
+.header__lang-link:last-child {
+    margin-right: 0;
+}
+
+@media screen and (max-width:766px) {
+    .header__lang-link {
+        font-size: 18px;
+        line-height: 20px;
+        padding-top: 14px;
+    }
+}
+
+@media screen and (min-width:767px) {
+    .header__lang-link {
+        font-size: 24px;
+        line-height: 28px;
+        padding-top: 18px;
+    }
+}

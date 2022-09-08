@@ -17,6 +17,7 @@
     margin: 0 auto;
     min-height: 100%;
     max-width: 1280px;
+    min-width: 319px;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
@@ -142,7 +143,7 @@
 
 /*==================== lead block start ====================*/
 .lead {
-   /* margin: 0 auto; */
+    margin: 0 auto; 
 }
 
 @media screen and (max-width:766px)  {
@@ -224,6 +225,7 @@
     display: flex;
     flex-direction: column;
     object-fit: cover;
+    margin-bottom: 8px;
 }
 
 @media screen and (max-width:766px) {
@@ -239,13 +241,19 @@
     }
 }
 
+@media screen and (min-width:1279px) {
+    .lead__image-container {
+        margin-left: 128px;
+        margin-right: 128px;
+    }
+}
+
 .lead__image {
     background-image: url(../images/lead/kalegin-michail-179870-unsplash.png);
     width: 100%;
     background-position: center;
     background-size: cover;
     margin-bottom: 8px;
-    /*text-align: center; */
 }
 
 @media screen and (max-width:766px) {
@@ -260,6 +268,7 @@
         max-width: 100%;
         padding: 100.38px 44.1px 204.33px 32.39px;
         margin: 0 auto;
+        margin-bottom: 8px;
     }
     
 }
@@ -268,7 +277,6 @@
     .lead__image {
         width: calc(100% - 48*2);
         padding: 121.29px 53.28px 246.9px 39.14px;
-        margin-right: 96px; 
         
     }
 }
@@ -277,7 +285,6 @@
     .lead__image {
         width: calc(100% - 148*2);
         padding: 128.61, 56.5, 261.8, 41.5;
-        margin-right: 148px;
     }
 }
 
@@ -303,7 +310,7 @@
 
 @media screen and (min-width: 767px) {
     .lead__pic-caption {
-        margin-left: 48px;
+        margin-left: 24px;
     }
 }
 
@@ -364,7 +371,7 @@
 @media screen and (max-width: 766px) {
     .intro__title {
         max-width: 690px;
-        font-size: 32px;
+        font-size: 28px;
         line-height: 35px;
     }
 }
@@ -386,8 +393,6 @@
 
 @media screen and (max-width: 766px) {
     .intro__text {
-        margin-left: 24px;
-        margin-right: 24px;
         margin-bottom: 34px;
     }
 }
@@ -423,22 +428,26 @@
     display: grid;
 }
 
-@media screen and (max-width:499px) {
+@media screen and (max-width:349px) {
     .photo-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, min-content);
+        grid-template-columns: repeat(1, 1fr);
         gap: 12px;
         margin-bottom: 64px;
+        align-self: center;
+        margin-left: 16px;
+        margin-right: 16px;
     }
     
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (min-width: 350px) {
     .photo-grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(1, min-content);
         gap: 12px;
         margin-bottom: 64px;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 }
 
@@ -447,6 +456,8 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 14px;
         margin-bottom: 88px;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 }
 
@@ -454,6 +465,8 @@
     .photo-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: 16px;
+        margin-left: 48px;
+        margin-right: 48px;
     }
 }
 
@@ -485,6 +498,8 @@
         column-gap: 28px;
         row-gap: 48px;
         margin-bottom: 72px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 }
 
@@ -495,6 +510,8 @@
         column-gap: 32px;
         row-gap: 48px;
         margin-bottom: 80px;
+        margin-left: 48px;
+        margin-right: 48px;
     }
 }
 
@@ -505,6 +522,8 @@
         column-gap: 40px;
         row-gap: 48px;
         margin-bottom: 80px;
+        margin-left: 128px;
+        margin-right: 128px;
     }
 }
 
@@ -517,6 +536,7 @@
 
 @media screen and (max-width: 766px) {
     .place__title {
+        margin-left: 16px;
         font-size: 32px;
         line-height: 35px;
     }
@@ -547,6 +567,12 @@
     align-self: flex-end;
 }
 
+@media screen and (max-width: 766px) {
+    .place__website {
+        margin-left: 16px;
+    }
+}
+
 .place__url-heading {
     font-weight: 400;
     font-size: 12px;
@@ -571,6 +597,13 @@
 .place__paragraph-container {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 766px) {
+    .place__paragraph-container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }
 
 .place__paragraph {
@@ -602,7 +635,7 @@
 
 @media screen and (max-width: 766px) {
     .cover {
-       margin-bottom: 64px;
+        margin-bottom: 64px;
     }
 }
 
@@ -737,7 +770,7 @@
 
 @media screen and (max-width: 766px) {
     .footer {
-      flex-direction: column;
+        flex-direction: column;
     }
 }
 

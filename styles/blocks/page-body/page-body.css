@@ -1,0 +1,30 @@
+.page-body {
+    color:var(--basic-light);
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 1280px;
+    min-width: 319px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+@media screen and (max-width:766px) {
+    .page-body {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:767px) {
+    .page-body {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1023px) {
+    .page-body {
+        width:100%;
+    }
+}   

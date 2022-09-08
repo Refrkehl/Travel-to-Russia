@@ -1,0 +1,21 @@
+.lead {
+    margin: 0 auto; 
+}
+
+@media screen and (max-width:766px)  {
+    .lead {
+        margin-bottom: 64px;
+    }
+}
+
+@media screen and (min-width:767px) {
+    .lead {
+        margin-bottom: 88px;
+    }
+}
+
+@media screen and (min-width:1023px) {
+    .lead {
+        margin-bottom: 92px;
+    }
+}
